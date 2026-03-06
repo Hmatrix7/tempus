@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="world-clock-page">
+
+<h1>🌍 World Clock</h1>
+
+<div class="world-map" id="worldMap">
+    <!-- City dots will be injected here -->
+    <!-- Inline SVG for world map (distinctive) -->
+    <svg viewBox="0 0 2000 1001" preserveAspectRatio="xMidYMid meet">
+        <g fill="#1e293b" stroke="#ffffff" stroke-width="1">
+            <!-- Example simplified continents (replace with full SVG if desired) -->
+            <path d="M100,200 L300,180 L400,300 L200,400 Z" />
+            <path d="M500,100 L700,120 L800,250 L600,200 Z" />
+            <path d="M1200,300 L1400,320 L1500,450 L1300,400 Z" />
+            <path d="M1600,600 L1800,620 L1900,750 L1700,700 Z" />
+        </g>
+    </svg>
+</div>
+
+<div class="clock-display" id="cityTime">Tap a city to see time</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

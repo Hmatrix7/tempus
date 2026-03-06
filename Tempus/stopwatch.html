@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="back-btn" onclick="goToDashboard()">← Dashboard</button>
+
+    <h1>Stopwatch</h1>
+
+    <div class="circle">
+        <div class="time-display" id="display">
+            00:00:00:00
+        </div>
+    </div>
+    
+
+    <div class="buttons">
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="lap()">Lap</button> <!-- Added Lap button -->
+        <button onclick="clearLaps()">Clear Laps</button> <!-- New button -->
+    </div>
+
+    <!-- Container for laps -->
+    <div id="laps"></div>
+
+    <br><br>
+    <a href="index.html">← Back to Dashboard</a>
+
+    <script src="js/stopwatch.js"></script>
+</body>
+</html>
